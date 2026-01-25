@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding-top: 120px;
+}
+
+/* Header */
+header {
+  background: #3498db;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 8px 12px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Forms */
+.form-container {
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 350px;
+  margin: 40px auto;
+  border-radius: 10px;
+  display: none;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Home features */
+.features {
+  display: none;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: #ecf0f1;
+  padding: 25px;
+  width: 30%;
+  min-width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Payment */
+#payment, #successContainer {
+  display: none;
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Welcome */
+#welcomeContainer {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* 📱 Tablets & Mobiles */
+@media (max-width: 768px) {
+  body {
+    padding-top: 150px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 90%;
+  }
+}
+
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}

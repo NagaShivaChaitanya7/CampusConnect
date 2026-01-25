@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Campus Connect</h1>
+  <nav>
+    <ul>
+      <li><a href="#" id="loginLink">Login</a></li>
+      <li><a href="#" id="registerLink">Register</a></li>
+      <li><a href="#" id="homeLink">Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="welcomeContainer">
+  <h2>Welcome to Campus Connect!</h2>
+  <p>Your one-stop platform for buying, selling, tutoring, and sharing resources.</p>
+  <button onclick="showLogin()">Get Started</button>
+</div>
+
+<div class="form-container" id="loginContainer">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="email" required placeholder="Email">
+    <input type="password" required placeholder="Password">
+    <button type="submit">Login</button>
+  </form>
+  <a href="#" id="showRegister">Register</a>
+</div>
+
+<div class="form-container" id="registerContainer">
+  <h2>Register</h2>
+  <form id="registerForm">
+    <input type="text" required placeholder="Full Name">
+    <input type="email" required placeholder="Email">
+    <input type="password" required placeholder="Password">
+    <button type="submit">Register</button>
+  </form>
+  <a href="#" id="showLogin">Login</a>
+</div>
+
+<section class="features" id="homeSection">
+  <div class="feature-box" id="buySellBtn">Buy & Sell</div>
+  <div class="feature-box" id="tutoringBtn">Tutoring</div>
+  <div class="feature-box" id="donateBorrowBtn">Donate & Borrow</div>
+</section>
+
+<main id="payment">
+  <h2>Payment</h2>
+  <form id="paymentForm">
+    <input type="text" required placeholder="Card Number">
+    <input type="text" required placeholder="Cardholder Name">
+    <input type="text" required placeholder="Expiry Date">
+    <input type="text" required placeholder="CVV">
+    <button type="submit">Pay</button>
+  </form>
+</main>
+
+<div id="successContainer">
+  <h2>Payment Successful!</h2>
+  <button onclick="showHome()">Back to Home</button>
+</div>
+
+<footer>
+  <p>&copy; 2025 Campus Connect</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
